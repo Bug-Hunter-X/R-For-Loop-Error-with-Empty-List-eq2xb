@@ -1,0 +1,3 @@
+# R For Loop Error with Empty List
+
+This repository demonstrates a common error in R when using a `for` loop to iterate over an empty list.  The code attempts to iterate using `1:length(my_list)`, which will result in an error if `my_list` is empty because `length(my_empty_list)` will be 0 and `1:0` returns an empty integer vector.  This will produce an error if the loop is executed. The solution demonstrates how to safely handle empty lists when using for loops.
